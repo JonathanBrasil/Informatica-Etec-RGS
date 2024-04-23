@@ -4,7 +4,7 @@ Este projeto é um site simples para facilitar a comunicação com a equipe de T
 
 ## ℹ️ Sobre o Projeto
 
-O site do Suporte TI - Etec RGS é uma aplicação web simples, feito durante meu període de estágio na Etec, que permite aos usuários criar e visualizar chamados, 
+O site do Suporte TI - Etec RGS é uma aplicação web simples, feito durante meu período de estágio na Etec, que permite aos usuários criar e visualizar chamados, 
 solicitar instação de novos softwares nos laboratórios de informática e fazer o checklist do estado dos laboratórios, facilitando e automatizando a comunicação e organizando os processos. 
 Foi desenvolvido com as seguintes tecnologias:
 
