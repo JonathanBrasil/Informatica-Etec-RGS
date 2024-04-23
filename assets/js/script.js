@@ -1,9 +1,9 @@
 
-class MobileNavbar{
-    constructor(mobileMenu, menu, navLinks){
+class MobileNavbar {
+    constructor(mobileMenu, menu, navLinks) {
         this.mobileMenu = document.querySelector(mobileMenu);
         this.menu = document.querySelector(menu);
-        this.navLinks =  document.querySelectorAll(navLinks);
+        this.navLinks = document.querySelectorAll(navLinks);
         this.activeClass = "active";
 
         this.handleClick = this.handleClick.bind(this);
@@ -11,15 +11,15 @@ class MobileNavbar{
 
     }
 
-    animateLinks(){
+    animateLinks() {
         this.navLinks.forEach((link, index) => {
-            link.style.animation 
-            ? (link.style.animation = "")    
-            : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`);
+            link.style.animation
+                ? (link.style.animation = "")
+                : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`);
         });
     }
-    
-    handleClick(){
+
+    handleClick() {
         this.menu.classList.toggle(this.activeClass);
         this.mobileMenu.classList.toggle(this.activeClass)
         this.animateLinks();
@@ -30,8 +30,8 @@ class MobileNavbar{
     }
 
     init() {
-        if (this.mobileMenu){
-            this.addClickEvent();  
+        if (this.mobileMenu) {
+            this.addClickEvent();
         }
         return this;
     }
@@ -44,3 +44,17 @@ const mobileNavbar = new MobileNavbar(
 );
 
 mobileNavbar.init();
+
+
+//Animação tela inicial site....
+
+var delayInMilliseconds = 3000; //2 segundos
+
+window.onload = setTimeout(function () {
+    const element = document.querySelector('#inicio'); //seleciona ID inicio
+    element.classList.replace('tela-azul', 'load-page'); //troca classe por outra
+}, delayInMilliseconds);
+
+
+
+

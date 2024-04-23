@@ -38,6 +38,7 @@ ul {
 html {
     font-family: Josefin-sans, sans-serif;
     font-weight: 500;
+    overflow-x: hidden;
 }
 
 body {
@@ -45,6 +46,14 @@ body {
     color: var(--black);
     overflow-x: hidden;
 }
+
+html, body {
+    overflow-x: hidden;
+    position: relative;
+  }
+ body {
+    width:100%;
+  }
 
 .background{
     background: url(../img/background2.jpg)
@@ -87,6 +96,7 @@ nav a {
         justify-content: space-between;
         margin-left: 1rem;
         margin-right: 1rem;
+        overflow-x: hidden;
     }
 
     a {
@@ -208,8 +218,17 @@ main {
     width: 100%;
 }
 
+/* ELEMENTOS ANIMACAO INICIAL */
+.tela-azul{
+    background: rgb(126, 214, 223);
+        width: 100%;
+        height: 100%;
+       position: absolute;
+}
+
 .load-page {
-    animation: 2s ease-out 0.1s 1 encolhertela;
+    animation: 0.7s ease-out -0.1s 1 encolhertela;
+    position: absolute;
 }
 
 @keyframes encolhertela {
@@ -224,31 +243,20 @@ main {
         z-index: 5;
     }
 
+
+
     to {
         background: rgb(126, 214, 223);
         width: 100px;
         height: 100px;
-        top: 40%;
+        top: 33%;
         left: 50%;
         border-radius: 50%;
         position: absolute;
         transform: translate(-50%, -50%);
         z-index: 5;
-
     }
 }
-
-/* I------------BACKGROUND-----------I
-
-.background-banner{
-    background-image: url(/assets/img/background-line.png);
-    background-position: 25px 125px;
-    background-size:contain;
-    background-repeat: no-repeat;
-    
-}
-
-*/
 
 
 .banner {
