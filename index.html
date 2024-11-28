@@ -17,19 +17,34 @@
             <a href="http://etecrgs.com.br/" target="_blank">
                 <figure><img src="./assets/img/raposa-logo.png" height="50px"></figure>
             </a>
-
-            <div class ="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-
             <ul class="menu">
                 <li><a href="">Inicio</a></li>
                 <li><a href="https://forms.gle/m5iD1uNsJ7EXHLvt6" target="_blank">Chamado</a></li>
                 <li><a href="https://forms.gle/sjve1L2JR47ez4xJ6" target="_blank">CheckList</a></li>
                 <li><a href="https://forms.gle/EiVyzcihn3udizU18" target="_blank">Softwares</a></li>
             </ul>
+            <!-- Google Calendar Appointment Scheduling begin -->
+            <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+            <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+            <script>
+                (function () {
+                    var target = document.currentScript;
+                    window.addEventListener('load', function () {
+                        calendar.schedulingButton.load({
+                            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2dfMIoIGY9pfaMIVI8hfJDs_BipGpIaSNmoL6zMspeURys5AugIWTzfsqyfZxprYM_i47ITyUY?gv=true',
+                            color: '#039BE5',
+                            label: 'Agendar uso notebook',
+                            target,
+                        });
+                    });
+                })();
+            </script>
+            <!-- end Google Calendar Appointment Scheduling -->
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
         <hr class="nav-division">
     </header>
@@ -50,31 +65,32 @@
             <button>
                 <a href="https://docs.google.com/spreadsheets/d/1tA9ThhEg3W4A91ogfRlz8uDikC9DYaKLaQIXhnnghug/edit?usp=sharing"
                     target="_blank">
-                    <span>Chamados Abertos</span>
+                    <span>Consultar Chamados</span>
                     <figure> <img src="./assets/img/click.gif" width="50px"> </figure>
                 </a>
             </button>
             <button>
                 <a href="https://forms.gle/EiVyzcihn3udizU18" target="_blank">
-                    <span>Lista de Softwares</span>
+                    <span>Solicitar Softwares</span>
                     <figure><img src="./assets/img/computer.gif" width="50px"></figure>
                 </a>
             </button>
             <button>
-                <a href="https://forms.gle/sjve1L2JR47ez4xJ6" target="_blank">
-                    <span>CheckList Laboratorios</span>
+                <a href="https://calendar.app.google/t6LMY8gYNLiCnBra9" target="_blank">
+                    <span>Agendar Lab Movél</span>
                     <figure><img src="./assets/img/checklist.gif" width="50px"></figure>
                 </a>
             </button>
         </section>
+
     </main>
     <hr class="nav-division">
     <footer>
         <p>© copyright 2024</p>
-        <p>Aplicação web criada por <a href="https://github.com/JonathanBrasil" target="_blank">Jonathan</a> </p> 
+        <p>Aplicação web criada por <a href="https://github.com/JonathanBrasil" target="_blank">Jonathan</a> </p>
         <p>Formulários: Jonathan e
             <a href="https://github.com/Leticia-Emily-Moraes" target="_blank">Leticia</a>
-        </p> 
+        </p>
     </footer>
     <script src="./assets/js/script.js"></script>
 </body>
