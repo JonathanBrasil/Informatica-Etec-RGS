@@ -59,7 +59,7 @@ html, body {
     background: url(../img/background2.jpg)
     no-repeat center center;
     background-size: cover;
-    opacity: 0.9;
+    opacity: 1;
 }
 
 nav {
